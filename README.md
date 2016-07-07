@@ -14,3 +14,5 @@ https://hellokoding.com/jpa-many-to-many-extra-columns-relationship-mapping-exam
 ## Run
 `mvn spring-boot:run`
 
+## License
+MIT
