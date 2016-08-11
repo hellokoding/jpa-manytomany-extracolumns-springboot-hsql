@@ -1,4 +1,4 @@
-# JPA Many-To-Many Extra Columns Relationship Mapping Example with Spring Boot, HSQL
+# JPA Many-To-Many Extra Columns Relationship Mapping Example with Spring Data JPA, Spring Boot
 
 ## Guide
 https://hellokoding.com/jpa-many-to-many-extra-columns-relationship-mapping-example-with-spring-boot-hsql/
