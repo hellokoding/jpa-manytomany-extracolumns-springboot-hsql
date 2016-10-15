@@ -32,6 +32,7 @@ public class HelloJpaApplication implements CommandLineRunner {
     @Override
     @Transactional
     public void run(String... strings) throws Exception {
+        // create new
         Book bookA = new Book("Book A");
         Publisher publisherA = new Publisher("Publisher A");
 
@@ -44,5 +45,15 @@ public class HelloJpaApplication implements CommandLineRunner {
 
         publisherRepository.save(publisherA);
         bookRepository.save(bookA);
+
+        // test
+        System.out.println(bookA.getBookPublishers().size());
+
+        // update
+        bookA.getBookPublishers().remove(bookPublisher);
+        bookRepository.save(bookA);
+
+        // test
+        System.out.println(bookA.getBookPublishers().size());
     }
 }
